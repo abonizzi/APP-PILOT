@@ -7,7 +7,7 @@ Account Supabase, repository GitHub, sito Netlify. Node 20 (solo se vuoi lavorar
 
 ## 2. Supabase
 1. Crea un progetto Supabase.
-2. SQL Editor: esegui in ordine `supabase/migrations/001_init.sql`, `002_rekey_vault.sql` e `003_supabase_account_limit.sql` (limite di 2 progetti per account Supabase).
+2. SQL Editor: esegui in ordine `supabase/migrations/001_init.sql`, `002_rekey_vault.sql` e `003_supabase_account_limit.sql` (limite di 2 progetti per account Supabase) e `004_project_service_config.sql` (dati per singolo progetto); in alternativa usa il file unico `apppilot-supabase-completo.sql`.
 3. Authentication → Providers → Email: **disattiva "Allow new users to sign up"**. Poi Authentication → Users → "Add user" con la tua email e password (account iniziale).
 4. Authentication → URL Configuration: imposta Site URL sull'indirizzo Netlify (serve al recupero password).
 5. Verifica RLS: esegui `supabase/tests/rls_test.sql`. Deve terminare con `RLS OK`; qualunque eccezione "FALLITO" va risolta prima di usare l'app.
